@@ -6,6 +6,8 @@ date: 2026-02-08
 
 <article class="post">
 
+# Dynamic Programming in Genetics
+## Inspired by Biological Sequence Analysis, R. Durbin
 
 Nature makes genomics sequencing for us; we tinker from one string of DNA to other as opposed to starting anew. This brings forth the concept of **Alignment**. Sequences in biology have insertions, deletions, and substitutions, and these are all comparable using the magic of computer science. An interesting paper I read was _A Model of Evolutionary Change in Proteins_ by Dayhoff, Schwartz, and Orcutt, which insinuates that evolution is commutative, it is a vibration around given frequencies. They make a matrix of accepted point mutations, and this has extensions in dynamic programming to find the similarity score between two lengths of DNA/Protein etc.
 
