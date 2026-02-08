@@ -9,4 +9,4 @@ title: Blog
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%b %d, %Y" }}
 {% endfor %}
 
-[← Back to Blog](/)
+[← Back to Home](https//:kj0s.github.io)
