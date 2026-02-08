@@ -9,4 +9,7 @@ title: Blog
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%b %d, %Y" }}
 {% endfor %}
 
-[← Back to Home](https//:kj0s.github.io)
+---
+<!-- not working since --- used every time smth is closed -->
+[← Back to Home](/)
+
