@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Chromatophores and Cognition"
-date: 2026-02-09
+date: 2026-02-07
 ---
 
 Recently, I wrote an article about chromatohpores and how they can 'see' without eyes. Find it linked here. I make the case that this behaviour is cognitive [link]. 
