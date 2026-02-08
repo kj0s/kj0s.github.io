@@ -26,5 +26,22 @@ header li:hover {
   background: linear-gradient(to top, #d98fa3 0%, #b86a80 100%);
 }
 
+.floating-gif {
+  position: fixed;       /* stays in bottom-right even when scrolling */
+  bottom: 20px;          
+  right: 20px;           
+  width: 80px;           
+  height: auto;          
+  z-index: 9999;         
+  pointer-events: none;  
+  animation: float 3s ease-in-out infinite; 
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
 
 
