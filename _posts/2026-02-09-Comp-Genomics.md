@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: "Dynamic Programming in Genetics"
