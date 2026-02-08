@@ -2,14 +2,6 @@
 layout: default
 ---
 
-<header>
-  <h1 class="header">KJ Srivastava</h1>
-  <p class="header">Find out what I'm up to!</p>
-
-  <!-- Blog button -->
-  <div style="padding:10px; background:#c47289; color:#fff; width:150px; text-align:center; border-radius:6px; margin:15px 0;">
-    <a href="/blog" style="color:#fff; text-decoration:none; font-weight:bold;">Blog</a>
-  </div>
 
 <!-- Main content section -->
 <section>
