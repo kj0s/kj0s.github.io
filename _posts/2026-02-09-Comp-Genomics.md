@@ -4,7 +4,6 @@ title: "Dynamic Programming in Genetics"
 date: 2026-02-08
 ---
 
-<article class="post">
 
 # Dynamic Programming in Genetics
 ## Inspired by Biological Sequence Analysis, R. Durbin
@@ -15,5 +14,4 @@ An elementary resource for doing this is the Needleman-Wunsch algorithm. UCSD ha
 
 This is essentially a matrix with SeqA as the rows, SeqB as the columns, and the alignment score as the cells. This shows us the conserved regions between the sequences. 
 
-</article>
 [← Back to Blog](/blog)
