@@ -19,11 +19,14 @@ a {
 header li {
   background: #344a32;
   background: linear-gradient(to top, #c47289 0%, #9e4f65 100%);
+  
 }
 
 header li:hover {
   background: #f2dce7;
   background: linear-gradient(to top, #d98fa3 0%, #b86a80 100%);
+  -webkit-box-shadow: inset 0px 1px 1px 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0px 1px 1px 0 rgba(0,0,0,0.1);
 }
 
 .floating-gif {
