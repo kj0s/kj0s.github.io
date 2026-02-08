@@ -40,20 +40,32 @@
       </header>
 
       <section>
+        {% if page.url == "/blog/" %}
+          <!-- Blog index page -->
+          <h2>Latest Posts</h2>
+          {% for post in site.posts limit:5 %}
+            <article class="post">
+              <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+              <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+              <small>{{ post.date | date: "%b %d, %Y" }}</small>
+            </article>
+          {% endfor %}
+          <p><a href="/blog" style="color:#c47289; font-weight:bold;">See all posts →</a></p>
+      
+        {% elsif page.layout == "post" %}
+          <!-- Single blog post -->
+          <article class="post">
+            <h1>{{ page.title }}</h1>
+            <small>{{ page.date | date: "%b %d, %Y" }}</small>
+            {{ content }}
+          </article>
+      
+        {% else %}
+          <!-- Other pages -->
           {{ content }}
-        
-          {% if page.url == "/blog/" %}
-            <h2>Latest Posts</h2>
-            {% for post in site.posts limit:5 %}
-              <article class="post">
-                <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-                <small>{{ post.date | date: "%b %d, %Y" }}</small>
-              </article>
-            {% endfor %}
-            <p><a href="/blog" style="color:#c47289; font-weight:bold;">See all posts →</a></p>
-          {% endif %}
-        </section>
+        {% endif %}
+      </section>
+
 
 
       <footer>
