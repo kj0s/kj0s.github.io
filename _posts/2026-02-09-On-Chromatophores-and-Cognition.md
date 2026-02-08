@@ -1,6 +1,5 @@
 ---
 layout: default
-layout: post
 title: "On Chromatophores and Cognition"
 date: 2026-02-07
 ---
