@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "On Chromatophores and Cognition"
-date: 2026-02-07
+date: 2026-01-07
 ---
 
 <article class="post">
