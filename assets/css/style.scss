@@ -35,6 +35,27 @@ header li {
   outline: none;
 }
 
+.repo-card {
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  transition: transform 0.1s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+}
+
+.repo-card h3 {
+  margin: 0;
+}
+
+.repo-card a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
 
 
 
