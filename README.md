@@ -2,7 +2,17 @@
 # Hi! I'm KJ
 ## I love computational biology, and like to write in my free time. 
 
-Find out what i'm up to!
+---
+
+## Contributions 🐍
+
+<div style="text-align:center; margin-top:20px;">
+  <img 
+    src="https://raw.githubusercontent.com/yourusername/yourrepo/output/github-contribution-grid-snake.svg" 
+    alt="GitHub Snake"
+    style="width:100%; max-width:700px;"
+  />
+</div>
 
 ---
 
