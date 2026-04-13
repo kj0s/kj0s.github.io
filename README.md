@@ -15,7 +15,6 @@
 
 ## Some cool stuff:
 
----
 ### Recent Code
 
 <div id="repo-list"></div>
