@@ -20,6 +20,8 @@
 
 ---
 
+---
+
 ## Recent Code
 
 <div id="repo-list"></div>
@@ -32,39 +34,30 @@ fetch(`https://api.github.com/users/${username}/repos`)
   .then(repos => {
     const container = document.getElementById("repo-list");
 
-    // remove forks
-    repos = repos.filter(repo => !repo.fork);
+    repos = repos
+      .filter(repo => !repo.fork)
+      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+      .slice(0, 4);
 
-    // sort by last updated
-    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-
-    // only show top 4
-    repos.slice(0, 4).forEach(repo => {
+    repos.forEach(repo => {
       const el = document.createElement("div");
-
-      el.style.background = "#f2dce7";
-      el.style.borderLeft = "4px solid #c47289";
-      el.style.padding = "10px";
-      el.style.marginBottom = "15px";
-      el.style.borderRadius = "4px";
+      el.className = "card";
 
       el.innerHTML = `
-        <a href="${repo.html_url}" target="_blank" 
-           style="color:#344a32; font-weight:bold; font-size:16px; text-decoration:none;">
+        <a href="${repo.html_url}" target="_blank">
           ${repo.name}
         </a>
-        <p style="color:#232323; margin:5px 0;">
+        <p>
           ${repo.description || "No description provided."}
         </p>
-        <small style="color:#9e4f65;">
+        <small>
           ⭐ ${repo.stargazers_count} | Updated: ${new Date(repo.updated_at).toLocaleDateString()}
         </small>
       `;
 
       container.appendChild(el);
     });
-  })
-  .catch(err => console.error(err));
+  });
 </script>
 
 {% for post in site.posts limit:5 %}
