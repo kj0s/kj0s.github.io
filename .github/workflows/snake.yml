@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # runs daily
+    - cron: "0 3 * * *"  # move away from midnight collisions
   workflow_dispatch:
 
 jobs:
@@ -15,11 +15,11 @@ jobs:
       - name: Generate snake
         uses: Platane/snk@v3
         with:
-          github_user_name: kj0s
+          github_user_name: yourusername
           outputs: |
             dist/github-contribution-grid-snake.svg
 
-      - name: Push to output branch
+      - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
