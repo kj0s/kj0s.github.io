@@ -2,7 +2,11 @@
 layout: default
 title: Blog
 ---
-
+<img 
+  src="https://raw.githubusercontent.com/yourusername/yourrepo/output/github-contribution-grid-snake.svg" 
+  alt="GitHub Snake"
+  style="width:100%; max-width:700px;"
+/>
 ## Blog
 
 {% for post in site.posts %}
@@ -10,6 +14,7 @@ title: Blog
 {% endfor %}
 
 ---
+## Code 
 <div id="repo-list"></div>
 
 <script>
