@@ -4,25 +4,19 @@
 
 ---
 
-## Contributions 🐍
-
-<div style="text-align:center; margin-top:20px;">
-  <img 
-    src="https://raw.githubusercontent.com/yourusername/yourrepo/output/github-contribution-grid-snake.svg" 
-    alt="GitHub Snake"
-    style="width:100%; max-width:700px;"
-  />
-</div>
+## Contributions 
+<img 
+  src="https://raw.githubusercontent.com/yourusername/yourrepo/output/github-contribution-grid-snake.svg" 
+  alt="GitHub Snake"
+  style="width:100%; max-width:700px;"
+/>
 
 ---
 
 ## Some cool stuff:
 
 ---
-
----
-
-## Recent Code
+### Recent Code
 
 <div id="repo-list"></div>
 
@@ -60,6 +54,8 @@ fetch(`https://api.github.com/users/${username}/repos`)
   });
 </script>
 
+---
+### Posts and Writing!
 {% for post in site.posts limit:5 %}
 <div style="background:#f2dce7; border-left:4px solid #c47289; padding:10px; margin-bottom:15px; border-radius:4px;">
   <a href="{{ post.url }}" style="color:#344a32; font-weight:bold; font-size:16px; text-decoration:none;">
