@@ -56,6 +56,30 @@ header li {
   color: #0366d6;
 }
 
+.card {
+  background: #f2dce7;
+  border-left: 4px solid #c47289;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.card a {
+  color: #344a32;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.card p {
+  color: #232323;
+  margin: 5px 0;
+}
+
+.card small {
+  color: #9e4f65;
+}
+
 
 
 
